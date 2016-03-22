@@ -3,7 +3,7 @@
 <div id="subheader-social">
 	<div class="container group">
 		<div class="group pad pad-top">
-			<?php alx_social_links() ; ?><h3><?php _e('Follow:','enspire'); ?></h3>
+			<?php alx_social_links() ; ?><h3><?php esc_html_e('Follow:','enspire'); ?></h3>
 		</div>
 	</div>
 </div><!--/#subheader-social-->
