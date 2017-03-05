@@ -6,9 +6,9 @@
 	<footer id="footer">
 		
 		<?php if ( ot_get_option('footer-ads') == 'on' ): ?>
-		<section id="footer-ads">
+		<div id="footer-ads">
 			<?php dynamic_sidebar( 'footer-ads' ); ?>
-		</section><!--/#footer-ads-->
+		</div><!--/#footer-ads-->
 		<?php endif; ?>
 		
 		<?php // footer widgets
@@ -27,7 +27,7 @@
 					   is_active_sidebar( 'footer-3' ) ||
 					   is_active_sidebar( 'footer-4' ) ) && $total > 0 ) 
 		{ ?>		
-		<section class="container dark" id="footer-widgets">			
+		<div class="container dark" id="footer-widgets">			
 			<div class="pad group">
 				<?php $i = 0; while ( $i < $total ) { $i++; ?>
 					<?php if ( is_active_sidebar( 'footer-' . $i ) ) { ?>
@@ -39,10 +39,10 @@
 					<?php } ?>
 				<?php } ?>
 			</div><!--/.pad-->
-		</section><!--/.container-->	
+		</div><!--/.container-->	
 		<?php } ?>
 			
-		<section id="footer-bottom">
+		<div id="footer-bottom">
 			<div class="container">				
 				<a id="back-to-top" href="#"><i class="fa fa-angle-up"></i></a>			
 				<div class="pad group">
@@ -75,7 +75,7 @@
 				
 				</div><!--/.pad-->
 			</div><!--/.container-->
-		</section><!--/#footer-bottom-->
+		</div><!--/#footer-bottom-->
 		
 	</footer><!--/#footer-->
 

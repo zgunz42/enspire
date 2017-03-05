@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="content">
+<div class="content">
 	<div class="pad group">
 	
 		<?php get_template_part('inc/page-title'); ?>
@@ -49,7 +49,7 @@
 		<?php if ( ot_get_option('post-comments') != 'off' ) { comments_template('/comments.php',true); } ?>
 		
 	</div><!--/.pad-->	
-</section><!--/.content-->
+</div><!--/.content-->
 
 <?php get_sidebar(); ?>
 
