@@ -30,7 +30,7 @@
 		<div class="container group">
 			<div class="group pad">
 				<?php echo alx_site_title(); ?>
-				<?php if ( ot_get_option('site-description') != 'off' ): ?><p class="site-description"><?php bloginfo( 'description' ); ?></p><?php endif; ?>
+				<?php if ( get_theme_mod('site-description','on') == 'on' ): ?><p class="site-description"><?php bloginfo( 'description' ); ?></p><?php endif; ?>
 				
 				<?php if ( has_nav_menu('topbar') ): ?>
 					<nav class="nav-container group" id="nav-topbar">

@@ -11,7 +11,7 @@
 				echo $audio;
 			}
 		?>
-		<?php if ( ot_get_option('format-icon') != 'off' ): ?>
+		<?php if ( get_theme_mod('format-icon','on') == 'on' ): ?>
 			<div class="square-icon"><div class="square-icon-inner"><a href="<?php echo get_post_format_link($format); ?>"><i class="fa fa-icon"></i></a></div></div>
 		<?php endif; ?>
 	</div>
@@ -62,7 +62,7 @@
 			</div>
 		</div>
 		<?php endif; ?>
-		<?php if ( ot_get_option('format-icon') != 'off' ): ?>
+		<?php if ( get_theme_mod('format-icon','on') == 'on' ): ?>
 			<div class="square-icon"><div class="square-icon-inner"><a href="<?php echo get_post_format_link($format); ?>"><i class="fa fa-icon"></i></a></div></div>
 		<?php endif; ?>
 	</div>
@@ -79,7 +79,7 @@
 				if ( isset($caption) && $caption ) echo '<div class="image-caption">'.$caption.'</div>';
 			} ?>
 		</div>
-		<?php if ( ot_get_option('format-icon') != 'off' ): ?>
+		<?php if ( get_theme_mod('format-icon','on') == 'on' ): ?>
 			<div class="square-icon"><div class="square-icon-inner"><a href="<?php echo get_post_format_link($format); ?>"><i class="fa fa-icon"></i></a></div></div>
 		<?php endif; ?>
 	</div>
@@ -96,7 +96,7 @@
 				echo $video;
 			}
 		?>
-		<?php if ( ot_get_option('format-icon') != 'off' ): ?>
+		<?php if ( get_theme_mod('format-icon','on') == 'on' ): ?>
 			<div class="square-icon"><div class="square-icon-inner"><a href="<?php echo get_post_format_link($format); ?>"><i class="fa fa-icon"></i></a></div></div>
 		<?php endif; ?>
 	</div>

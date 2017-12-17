@@ -16,7 +16,7 @@
 
 <?php endif; ?>
 
-<?php if ( ot_get_option('header-ads') == 'on' ): ?>
+<?php if ( get_theme_mod('header-ads') == 'on' ): ?>
 <div class="container group">			
 	<div id="header-ads">
 		<?php dynamic_sidebar( 'header-ads' ); ?>
