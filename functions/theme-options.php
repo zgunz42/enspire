@@ -763,7 +763,7 @@ Kirki::add_field( 'alx_enspire', array(
 		'social-icon'	=> array(
 			'type'			=> 'text',
 			'label'			=> esc_attr__( 'Icon Name', 'enspire' ),
-			'description'	=> esc_attr__( 'Font Awesome icons. Ex: fa-facebook', 'enspire' ),
+			'description'	=> esc_attr__( 'Font Awesome icons. Ex: fa-facebook ', 'enspire' ) . ' <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank"><strong>' . esc_attr__( 'View All', 'enspire' ) . ' </strong></a>',
 			'default'		=> 'fa-',
 		),
 		'social-link'	=> array(
