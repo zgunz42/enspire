@@ -92,7 +92,7 @@ class Kirki_Control_Dimensions extends Kirki_Control_Base {
 								<# } #>
 							</h5>
 							<div class="{{ choiceKey }} input-wrapper">
-								<# var val = ( ! _.isUndefined( data.value ) && ! _.isUndefined( data.value[ choiceKey ] ) ) ? data.value[ choiceKey ].replace( '%%', '%' ) : ''; #>
+								<# var val = ( ! _.isUndefined( data.value ) && ! _.isUndefined( data.value[ choiceKey ] ) ) ? data.value[ choiceKey ].toString().replace( '%%', '%' ) : ''; #>
 								<input {{{ data.inputAttrs }}} type="text" data-choice="{{ choiceKey }}" value="{{ val }}"/>
 							</div>
 						</div>
@@ -112,32 +112,32 @@ class Kirki_Control_Dimensions extends Kirki_Control_Base {
 	 */
 	protected function l10n() {
 		return array(
-			'left-top'              => esc_attr__( 'Left Top', 'enspire' ),
-			'left-center'           => esc_attr__( 'Left Center', 'enspire' ),
-			'left-bottom'           => esc_attr__( 'Left Bottom', 'enspire' ),
-			'right-top'             => esc_attr__( 'Right Top', 'enspire' ),
-			'right-center'          => esc_attr__( 'Right Center', 'enspire' ),
-			'right-bottom'          => esc_attr__( 'Right Bottom', 'enspire' ),
-			'center-top'            => esc_attr__( 'Center Top', 'enspire' ),
-			'center-center'         => esc_attr__( 'Center Center', 'enspire' ),
-			'center-bottom'         => esc_attr__( 'Center Bottom', 'enspire' ),
-			'font-size'             => esc_attr__( 'Font Size', 'enspire' ),
-			'font-weight'           => esc_attr__( 'Font Weight', 'enspire' ),
-			'line-height'           => esc_attr__( 'Line Height', 'enspire' ),
-			'font-style'            => esc_attr__( 'Font Style', 'enspire' ),
-			'letter-spacing'        => esc_attr__( 'Letter Spacing', 'enspire' ),
-			'word-spacing'          => esc_attr__( 'Word Spacing', 'enspire' ),
-			'top'                   => esc_attr__( 'Top', 'enspire' ),
-			'bottom'                => esc_attr__( 'Bottom', 'enspire' ),
-			'left'                  => esc_attr__( 'Left', 'enspire' ),
-			'right'                 => esc_attr__( 'Right', 'enspire' ),
-			'center'                => esc_attr__( 'Center', 'enspire' ),
-			'size'                  => esc_attr__( 'Size', 'enspire' ),
-			'height'                => esc_attr__( 'Height', 'enspire' ),
-			'spacing'               => esc_attr__( 'Spacing', 'enspire' ),
-			'width'                 => esc_attr__( 'Width', 'enspire' ),
-			'height'                => esc_attr__( 'Height', 'enspire' ),
-			'invalid-value'         => esc_attr__( 'Invalid Value', 'enspire' ),
+			'left-top'              => esc_attr__( 'Left Top', 'kirki' ),
+			'left-center'           => esc_attr__( 'Left Center', 'kirki' ),
+			'left-bottom'           => esc_attr__( 'Left Bottom', 'kirki' ),
+			'right-top'             => esc_attr__( 'Right Top', 'kirki' ),
+			'right-center'          => esc_attr__( 'Right Center', 'kirki' ),
+			'right-bottom'          => esc_attr__( 'Right Bottom', 'kirki' ),
+			'center-top'            => esc_attr__( 'Center Top', 'kirki' ),
+			'center-center'         => esc_attr__( 'Center Center', 'kirki' ),
+			'center-bottom'         => esc_attr__( 'Center Bottom', 'kirki' ),
+			'font-size'             => esc_attr__( 'Font Size', 'kirki' ),
+			'font-weight'           => esc_attr__( 'Font Weight', 'kirki' ),
+			'line-height'           => esc_attr__( 'Line Height', 'kirki' ),
+			'font-style'            => esc_attr__( 'Font Style', 'kirki' ),
+			'letter-spacing'        => esc_attr__( 'Letter Spacing', 'kirki' ),
+			'word-spacing'          => esc_attr__( 'Word Spacing', 'kirki' ),
+			'top'                   => esc_attr__( 'Top', 'kirki' ),
+			'bottom'                => esc_attr__( 'Bottom', 'kirki' ),
+			'left'                  => esc_attr__( 'Left', 'kirki' ),
+			'right'                 => esc_attr__( 'Right', 'kirki' ),
+			'center'                => esc_attr__( 'Center', 'kirki' ),
+			'size'                  => esc_attr__( 'Size', 'kirki' ),
+			'height'                => esc_attr__( 'Height', 'kirki' ),
+			'spacing'               => esc_attr__( 'Spacing', 'kirki' ),
+			'width'                 => esc_attr__( 'Width', 'kirki' ),
+			'height'                => esc_attr__( 'Height', 'kirki' ),
+			'invalid-value'         => esc_attr__( 'Invalid Value', 'kirki' ),
 		);
 	}
 }
