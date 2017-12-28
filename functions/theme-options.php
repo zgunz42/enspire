@@ -196,26 +196,6 @@ Kirki::add_field( 'alx_theme', array(
 		'step'	=> '1',
 	),
 ) );
-// Blog: Featured Posts Include
-Kirki::add_field( 'alx_theme', array(
-	'type'			=> 'checkbox',
-	'settings'		=> 'featured-posts-include',
-	'label'			=> esc_attr__( 'Featured Posts', 'enspire' ),
-	'description'	=> esc_attr__( 'To show featured posts in the slider AND the content below. Usually not recommended.', 'enspire' ),
-	'section'		=> 'blog',
-	'default'		=> false,
-) );
-// Blog: Featured Category
-Kirki::add_field( 'alx_theme', array(
-	'type'			=> 'select',
-	'settings'		=> 'featured-category',
-	'label'			=> esc_attr__( 'Featured Category', 'enspire' ),
-	'description'	=> esc_attr__( 'By not selecting a category, it will show your latest post(s) from all categories', 'enspire' ),
-	'section'		=> 'blog',
-	'default'		=> '',
-	'choices'		=> Kirki_Helper::get_terms( 'category' ),
-	'placeholder'	=> esc_attr__( 'Select a category', 'enspire' ),
-) );
 // Blog: Featured Post Count
 Kirki::add_field( 'alx_theme', array(
 	'type'			=> 'slider',
@@ -229,6 +209,26 @@ Kirki::add_field( 'alx_theme', array(
 		'max'	=> '12',
 		'step'	=> '1',
 	),
+) );
+// Blog: Featured Category
+Kirki::add_field( 'alx_theme', array(
+	'type'			=> 'select',
+	'settings'		=> 'featured-category',
+	'label'			=> esc_attr__( 'Featured Category', 'enspire' ),
+	'description'	=> esc_attr__( 'By not selecting a category, it will show your latest post(s) from all categories', 'enspire' ),
+	'section'		=> 'blog',
+	'default'		=> '',
+	'choices'		=> Kirki_Helper::get_terms( 'category' ),
+	'placeholder'	=> esc_attr__( 'Select a category', 'enspire' ),
+) );
+// Blog: Featured Posts Include
+Kirki::add_field( 'alx_theme', array(
+	'type'			=> 'checkbox',
+	'settings'		=> 'featured-posts-include',
+	'label'			=> esc_attr__( 'Featured Posts', 'enspire' ),
+	'description'	=> esc_attr__( 'To show featured posts in the slider AND the content below. Usually not recommended.', 'enspire' ),
+	'section'		=> 'blog',
+	'default'		=> false,
 ) );
 // Blog: Frontpage Widgets Top
 Kirki::add_field( 'alx_theme', array(
