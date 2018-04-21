@@ -1,0 +1,12 @@
+{
+    "name": "zgunz42/enspire",
+    "description": "A short description of what your package does",
+    "type": "wordpress-theme",
+    "keywords": [
+        "enspire",
+        "wordpress",
+        "child theme"
+    ],
+
+    "homepage": "https://github.com/zgunz42/"
+}
